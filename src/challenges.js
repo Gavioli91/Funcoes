@@ -10,7 +10,9 @@ function compareTrue(a, b) {
 // compareTrue (true, true)
 
 // Desafio 2
-function calcArea(base, altura) {
+function calcArea(base, height) {
+let (51, 1);
+return (base * altura) / 2;
   }
   
 
@@ -28,7 +30,7 @@ function concatName() {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
  
 }
 
