@@ -10,13 +10,16 @@ function compareTrue(a, b) {
 // compareTrue (true, true)
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+function calcArea(base, altura) {
+  }
+  
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+let frase = ['go Trybe'];
+let separarPalavras = [];
+function splitSentence(frase) {
+  separarPalavras = frase.split (' ');
+  return separarPalavras
 }
 
 // Desafio 4
@@ -26,7 +29,7 @@ function concatName() {
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
+ 
 }
 
 // Desafio 6
