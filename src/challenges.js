@@ -31,9 +31,10 @@ function concatName() {
 
 // Desafio 5
 function footballPoints(wins, ties) {
- let (3, 1);
- return (wins + ties);
+ let (14, 8);
+  return (wins + ties);
 }
+
 
 // Desafio 6
 function highestCount() {
