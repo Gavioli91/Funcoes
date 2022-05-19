@@ -25,8 +25,9 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(palavras) {
+  let retornar = palavras [palavras.length - 1] + ', ' + (palavras[0]);
+  return retornar;
 }
 
 // Desafio 5
