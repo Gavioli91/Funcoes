@@ -17,11 +17,9 @@ return conta;
   
 
 // Desafio 3
-let frase = [];
-let separarPalavras = [];
-function splitSentence(goTrybe) {
-  separarPalavras = frase.split (' ');
-  return separarPalavras
+function splitSentence(frase) {
+  let separarPalavras = frase.split (' ');
+  return separarPalavras;
 }
 
 // Desafio 4
