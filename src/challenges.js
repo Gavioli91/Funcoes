@@ -17,9 +17,9 @@ return conta;
   
 
 // Desafio 3
-let frase = ['go Trybe'];
+let frase = [];
 let separarPalavras = [];
-function splitSentence(frase) {
+function splitSentence(goTrybe) {
   separarPalavras = frase.split (' ');
   return separarPalavras
 }
@@ -32,8 +32,8 @@ function concatName(palavras) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
- let (14, 8);
-  return (wins + ties);
+ let resultado = (wins * 3) + ties;
+  return resultado;
 }
 
 
