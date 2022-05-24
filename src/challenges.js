@@ -1,3 +1,5 @@
+const { sortBy } = require("cypress/types/lodash");
+
 // Desafio 1
 function compareTrue(a, b) {
   if (a === true && b === true) {
@@ -50,38 +52,69 @@ function highestCount(array) {
   }
   return resultado;
 }
+
 // Desafio 7
-function catAndMouse(catAndMouse) {
-  if ('cat1' > 'cat2') {
-    return 'cat 1 mais próximo do mouse';
-  } else if ('cat2' > 'cat1') {
-    return 'cat 2 mais próximo do mouse';
-  } else if ('cat1' === 'cat2' === 'mouse') {
-    return 'os gatos trombam e o rato foge';
-  }
-    resultado;
+function catAndMouse() {
+  
   }
   
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(obj) {
+  let codigoNoArray = [];
+  for (let index = 0; index < obj.length; index+=1) {
+    codigoNoArray.push(solucao(obj[index]));  
+  }
+  return codigoNoArray;
+}
+function solucao(n) {
+  if (n % 3 === 0 && n % 5 === 0) {
+    return 'fizzBuzz'; 
+  }
+ if (n % 5 === 0) {
+   return 'buzz'; 
+ } 
+ if (n % 3 === 0) {
+   return 'fizz';
+ }
+ return 'bugg!';
 }
 
 // Desafio 9
-function encode(voltar) {
-  let palavra = ['a', 'e', 'i', 'o', 'u'];
-  repetir('a', 'z');
-  return voltar;
+function encode(codigo) {
+  let letras = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+};
+let entrada = codigo;
+entrada = entrada.replace (/[aeiou]/g, (m) => letras[m]);
+return entrada;
 }
-function decode() {
-  // seu código aqui
+function decode(decodifica) {
+  let numeros = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+};
+let saida = decodifica;
+saida = saida.replace (/[12345]/g, (m) => numeros[m])
+return saida;
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(list) {
+  let array = [];
+  for (let value of list) {
+    console.log(value);
+    
+  }
+    
+  }
 
 module.exports = {
   calcArea,
