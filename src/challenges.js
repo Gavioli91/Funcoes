@@ -1,4 +1,4 @@
-const { sortBy } = require("cypress/types/lodash");
+
 
 // Desafio 1
 function compareTrue(a, b) {
@@ -54,31 +54,36 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  
+function catAndMouse(mouse, cat1, cat2) {
+  let positionCat1 = Math.abs(mouse - cat1);
+  let positionCat2 = Math.abs(mouse - cat1);
+  if (positionCat1 === positionCat2) {
+    return 'Os gatos trombam e o rato foge';
+  }
+    return positionCat1 > positionCat2 ? 'cat2' : 'cat1';
   }
   
 
 // Desafio 8
 function fizzBuzz(obj) {
-  let codigoNoArray = [];
-  for (let index = 0; index < obj.length; index+=1) {
-    codigoNoArray.push(solucao(obj[index]));  
+  let codigoNoArray  = [];
+  for (let index = 0; index < obj.length; index += 1) {
+    codigoNoArray.push(solucao(obj[index]));
   }
   return codigoNoArray;
-}
-function solucao(n) {
-  if (n % 3 === 0 && n % 5 === 0) {
-    return 'fizzBuzz'; 
   }
- if (n % 5 === 0) {
-   return 'buzz'; 
- } 
- if (n % 3 === 0) {
-   return 'fizz';
- }
- return 'bugg!';
-}
+  function solucao(n) {
+    if (n % 3 === 0 && n % 5 === 0) {
+      return 'fizzBuzz';
+    }
+    if (n % 5 === 0) {
+      return 'buzz';
+    }
+    if (n % 3 === 0) {
+      return 'fizz';
+    }
+    return 'bug!';
+  }
 
 // Desafio 9
 function encode(codigo) {
@@ -107,14 +112,19 @@ return saida;
 }
 
 // Desafio 10
-function techList(list) {
-  let array = [];
-  for (let value of list) {
-    console.log(value);
-    
+function techList(obj, newName) {
+  if(obj.length === 0) return 'Vazio!';
+  let newArray = [];
+  obj.sort();
+  for (let i = 0; i < obj.length; i += 1){
+    const newObj = {
+      name: newName,
+      tech: obj[i],
+    };
+    newArray.push(newObj);
   }
-    
-  }
+  return newArray;
+}
 
 module.exports = {
   calcArea,
